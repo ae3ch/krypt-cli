@@ -80,4 +80,3 @@ go build -o krypt .
 ## License
 
 MIT
-# krypt-cli
