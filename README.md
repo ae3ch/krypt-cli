@@ -16,12 +16,16 @@
 2. Only the ciphertext is sent to the server.
 3. The decryption key lives in the URL fragment (`#...`), which is never sent over the network.
 
-## Install
-
-Download a binary from [Releases](../../releases), or build from source:
+## Install (macOS)
 
 ```
-go install krypt@latest
+brew install ae3ch/tap/krypt
+```
+
+To build from source instead:
+
+```
+go build -o krypt .
 ```
 
 ## Usage
@@ -70,12 +74,6 @@ krypt config path
 Server resolution order: `--server` flag > `KRYPT_SERVER` env > config file > built-in default.
 
 On first run, `krypt` will prompt you for your server URL.
-
-## Build from source
-
-```
-go build -o krypt .
-```
 
 ## License
 
